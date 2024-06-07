@@ -1,0 +1,105 @@
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.principal > h1,
+.principal > p {
+    color: #455f40;
+}
+.container-produtos {
+    width: 70%;
+}
+
+.produto {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ecf0f1;
+    color: #455f40;
+    padding: 20px;
+    border: 0.2px solid #455f40;
+    border-radius: 10px;
+}
+
+.produto:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.produto-info {
+    display: flex;
+    gap: 20px;
+}
+
+.produto-adiciona {
+    text-align: center;
+}
+
+.produto-adiciona input {
+    width: 40px;
+}
+
+.produto-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    background-color: #a67c52;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.produto-selecionar {
+    margin: 30px 0;
+}
+
+.produto-selecionar a {
+    color: #455f40;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.produto-selecionar a:hover {
+    color: white;
+    background-color: #455f40;
+}
+
+.metodo-pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.metodo-pagamento p {
+    color: #455f40;
+    margin: 0;
+}
+
+.metodo-pagamento a {
+    color: #455f40;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #455f40;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.metodo-pagamento a:hover {
+    color: white;
+    background-color: #455f40;
+}
+
+footer {
+    color: white;
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}

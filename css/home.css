@@ -1,0 +1,112 @@
+.hero {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    background-color: #455f40;
+    color: white;
+    padding: 50px 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    background-color: #a67c52;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.carousel img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.products {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.products h2 {
+    color: #455f40;
+}
+
+.products .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.products .grid a {
+    text-decoration: none;
+}
+
+.product-item {
+    color: #455f40;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item > p {
+    padding: 10px;
+}
+
+.product-item div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.product-item .icons .fa-heart {
+    margin-right: 20px;
+    transition: 0.2s;
+}
+
+.product-item .icons .fa-heart:hover {
+    color: red;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

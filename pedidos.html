@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lista de Desejos</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/pedidos.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="index.html" class="logo"><img src="images/BioGreen-Photoroom 1.png" alt="" /></a>
+                <div class="search-container">
+                    <input type="text" placeholder="Pesquise nossos Produtos" />
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="carrinho.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Carrinho</a>
+                        <a href="lista-desejos.html" class="nav-link"><i class="fas fa-heart"></i> Lista de desejos</a>
+                        <a href="pedidos.html" class="nav-link"><i class="fas fa-box"></i> Meus pedidos</a>
+                        <a href="conta.html" class="nav-link"><i class="fas fa-user"></i> Minha Conta</a>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <main class="principal">
+            <h1>Lista de desejos</h1>
+
+            <div class="container-produtos">
+                <section class="produtos-selecionados">
+                    <div class="produto">
+                        <div class="produto-info">
+                            <img src="images/BioGreen (2)-Photoroom 2.svg" alt="" class="produto-img" />
+                            <div>
+                                <p>Sabonete Rosa Silvestre</p>
+                                <p>11/06/2024</p>
+                                <p>R$19,90</p>
+                                <p>Pedido em transito</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="mensagem-vazio" style="display: none">
+                    <h2>Seu carrinho de compras está vazio.</h2>
+                </div>
+
+                <p class="produto-selecionar">
+                    <a href="index.html">Selecionar mais produtos</a>
+                </p>
+            </div>
+        </main>
+        <script src="js/identificaPag.js"></script>
+    </body>
+</html>

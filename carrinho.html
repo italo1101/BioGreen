@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Carrinho de Compras</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/carrinho.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="index.html" class="logo"><img src="images/BioGreen-Photoroom 1.png" alt="" /></a>
+                <div class="search-container">
+                    <input type="text" placeholder="Pesquise nossos Produtos" />
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="carrinho.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Carrinho</a>
+                        <a href="lista-desejos.html" class="nav-link"><i class="fas fa-heart"></i> Lista de desejos</a>
+                        <a href="pedidos.html" class="nav-link"><i class="fas fa-box"></i> Meus pedidos</a>
+                        <a href="conta.html" class="nav-link"><i class="fas fa-user"></i> Minha Conta</a>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <main class="principal">
+            <h1>Carrinho de Compras</h1>
+            <p>Produtos selecionados</p>
+
+            <div class="container-produtos">
+                <section class="produtos-selecionados">
+                    <div class="produto">
+                        <div class="produto-info">
+                            <img src="images/BioGreen (2)-Photoroom 2.svg" alt="" class="produto-img" />
+                            <div>
+                                <p>Sabonete Rosa Silvestre</p>
+                                <p>R$19,90</p>
+                                <button class="btn-excluir">Excluir Produto</button>
+                            </div>
+                        </div>
+
+                        <div class="produto-adiciona">
+                            <p>Adicione mais:</p>
+                            <i class="fa-solid fa-minus"></i>
+                            <input type="number" min="1" max="10" value="1" />
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="produto-info">
+                            <img src="images/BioGreen (2)-Photoroom 2.svg" alt="" class="produto-img" />
+                            <div>
+                                <p>Sabonete Rosa Silvestre</p>
+                                <p>R$19,90</p>
+                                <button class="btn-excluir">Excluir Produto</button>
+                            </div>
+                        </div>
+
+                        <div class="produto-adiciona">
+                            <p>Adicione mais:</p>
+                            <i class="fa-solid fa-minus"></i>
+                            <input type="number" min="1" max="10" value="1" />
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="mensagem-vazio" style="display: none">
+                    <h2>Seu carrinho de compras está vazio.</h2>
+                </div>
+
+                <div class="produto-total">
+                    <p>Preço total</p>
+                    <span>R$39,80</span>
+                </div>
+
+                <p class="produto-selecionar">
+                    <a href="index.html">Selecionar mais produtos</a>
+                </p>
+            </div>
+
+            <section class="metodo-pagamento">
+                <p>Método de pagamento:</p>
+                <label>
+                    <input type="radio" name="pagamento" />
+                    <i class="fa-brands fa-pix"></i>
+                    Pix
+                </label>
+                <label>
+                    <input type="radio" name="pagamento" />
+                    <i class="fa-regular fa-credit-card"></i>
+                    Cartão de crédito
+                </label>
+                <label>
+                    <input type="radio" name="pagamento" />
+                    <i class="fa-solid fa-barcode"></i>
+                    Boleto bancário
+                </label>
+                <label>
+                    <input type="radio" name="pagamento" />
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    PayPal
+                </label>
+
+                <a href="">Continuar</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 BioGreen. Todos os direitos reservados.</p>
+        </footer>
+
+        <script src="js/carrinho.js"></script>
+        <script src="js/identificaPag.js"></script>
+    </body>
+</html>
