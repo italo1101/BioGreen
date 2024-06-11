@@ -1,8 +1,9 @@
 .hero {
     display: flex;
     align-items: center;
-    width: 1200px;
-    background-color: #455f40;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #9b130e;
     color: white;
     padding: 50px 50px;
     margin: 0 auto;
@@ -18,11 +19,17 @@
     position: relative;
 }
 
+
 .carousel-item {
     flex: 0 0 100%;
     display: none;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.carousel-link {
+    text-decoration: none;
+    color: white;
 }
 
 .carousel-item.active {
@@ -37,16 +44,6 @@
     font-size: 36px;
 }
 
-.hero-text button {
-    padding: 10px 20px;
-    background-color: #a67c52;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
 .carousel img {
     width: 200px;
     height: auto;
@@ -54,7 +51,8 @@
 }
 
 .products {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -77,36 +75,329 @@
     color: #455f40;
     background-color: white;
     border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
 }
 
 .product-item img {
     width: 100%;
-    height: auto;
+    height: 200px; 
+    object-fit: cover; 
     border-radius: 5px;
 }
 
-.product-item > p {
-    padding: 10px;
+.product-item .discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
 }
 
-.product-item div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+.product-item .heart-icon {
+    position: absolute;
+    top: 10px;
+    padding: 5px;
+    left: 10px;
+    color: #ccc;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-.product-item .icons .fa-heart {
-    margin-right: 20px;
-    transition: 0.2s;
-}
-
-.product-item .icons .fa-heart:hover {
+.product-item .heart-icon:hover {
     color: red;
 }
-footer {
-    background-color: #333;
+
+.product-item .label {
+    display: inline-block;
+    background-color: #455f40;
     color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.product-item .title {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-item .price {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-item .old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.product-item .description {
+    font-size: 14px;
+    color: #585555;
+    margin-top: 10px;
+}
+
+.product-item .buy-button {
+    display: none;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    width: 90%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-item:hover .buy-button {
+    display: block;
+}
+
+footer {
+    background-color: #455f40;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-newsletter {
     text-align: center;
-    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.footer-newsletter h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-newsletter input[type="email"],
+.footer-newsletter input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.footer-newsletter button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-newsletter p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.footer-newsletter p a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-size: 14px;
+}
+
+.footer-links a i {
+    margin-right: 5px;
+}
+
+.footer-apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-apps a {
+    margin: 5px;
+}
+
+.footer-apps img {
+    width: 120px;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social p {
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.footer-social a:hover {
+    color: #ccc;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .carousel img {
+        width: 100px;
+    }
+
+    .products .grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .product-item {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .products h2 {
+        text-align: center;
+    }
+
+    .product-item .buy-button {
+        display: block;
+        width: 100%;
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-newsletter form {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+
+/* Estilos específicos para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .products .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .carousel img {
+        width: 150px;
+    }
+
+    .product-item {
+        width: 100%;
+    }
 }

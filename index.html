@@ -15,199 +15,316 @@
         <link rel="stylesheet" href="css/home.css" />
     </head>
     <body>
-        <div class="container">
-            <header>
-                <a href="index.html" class="logo"><img src="images/BioGreen-Photoroom 1.png" alt="" /></a>
+        <header class="header-container">
+            <div class="header-content">
+                <a href="index.html" class="logo"><img src="images/logo-sem-fundo.png" alt="Logo" /></a>
                 <div class="search-container">
-                    <input type="text" placeholder="Pesquise nossos Produtos" />
-                    <button><i class="fas fa-search"></i></button>
+                    <input id="search-input" type="text" placeholder="Pesquise nossos Produtos" />
+                    <button aria-label="Pesquisar"><i class="fas fa-search"></i></button>
                 </div>
                 <nav>
-                    <ul>
-                        <a href="carrinho.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Carrinho</a>
-                        <a href="lista-desejos.html" class="nav-link"><i class="fas fa-heart"></i> Lista de desejos</a>
-                        <a href="pedidos.html" class="nav-link"><i class="fas fa-box"></i> Meus pedidos</a>
-                        <a href="conta.html" class="nav-link"><i class="fas fa-user"></i> Minha Conta</a>
+                    <ul class="nav-links">
+                        <li><a href="carrinho.html" class="nav-link"><i class="fas fa-shopping-cart" aria-hidden="true"></i> Carrinho</a></li>
+                        <li><a href="lista-desejos.html" class="nav-link"><i class="fas fa-heart" aria-hidden="true"></i> Lista de desejos</a></li>
+                        <li><a href="pedidos.html" class="nav-link"><i class="fas fa-box" aria-hidden="true"></i> Meus pedidos</a></li>
+                        <li><a href="conta.html" class="nav-link"><i class="fas fa-user" aria-hidden="true"></i> Minha Conta</a></li>
                     </ul>
                 </nav>
-            </header>
-        </div>
-
-        <div class="hero">
-            <div class="carousel">
-                <div class="carousel-item active">
-                    <div class="hero-text">
-                        <h1>Beleza natural<br />embalagens sustentáveis<br />Descubra BioGreen!</h1>
-                        <button>Veja mais!</button>
-                    </div>
-                    <img src="images/BioGreen (2)-Photoroom 1.svg" alt="Imagem BioGreen" />
-                </div>
-                <div class="carousel-item">
-                    <div class="hero-text">
-                        <h1>Cuide de si<br />Cuide do planeta<br />Com BioGreen!</h1>
-                        <button>Explore!</button>
-                    </div>
-                    <img src="images/BioGreen (2)-Photoroom 1.svg" alt="Imagem BioGreen" />
-                </div>
-                <div class="carousel-item">
-                    <div class="hero-text">
-                        <h1>Produtos naturais<br />Para toda a família<br />BioGreen!</h1>
-                        <button>Saiba mais!</button>
-                    </div>
-                    <img src="images/BioGreen (2)-Photoroom 1.svg" alt="Imagem BioGreen" />
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
+        </header>
+
+        <div class="hero">
+            <a class="carousel-link" href="#">
+                <div class="carousel">
+                    <div class="carousel-item active">
+                        <div class="hero-text">
+                            <h1>Demonstre seu amor com um toque de carinho e frescor. <br> Presenteie com nosso kit de sabonetes exclusivos para o Dia dos Namorados.</h1>
+                        </div>
+                        <img src="images/kit namorados.png" alt="Imagem BioGreen" />
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero-text">
+                            <h1>Demonstre seu amor com um aroma inesquecível. <br> Presenteie com nosso sabonete exclusivo para o Dia dos Namorados.</h1>
+                        </div>
+                        <img src="images/sabonetes namorados.png" alt="Imagem BioGreen" />
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero-text">
+                            <h1>Um gesto simples que faz toda a diferença. <br>Celebre o Dia dos Namorados com nosso shampoo de qualidade.</h1>
+                        </div>
+                        <img src="images/shampoo namorados.png" alt="Imagem BioGreen" />
+                    </div>
+                </div>
+            </a>
         </div>
 
         <main class="main">
             <section class="products">
-                <h2>Sabonetes</h2>
+                <h2>Produtos em Destaque</h2>
                 <div class="grid">
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Sabonete" />
-                        <p>Sabonete Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Sabonete" />
-                        <p>Sabonete Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Sabonete" />
-                        <p>Sabonete Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Sabonete" />
-                        <p>Sabonete Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Sabonete" />
-                        <p>Sabonete Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Sabonete" />
-                        <p>Sabonete Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/desodorante.png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Creme desodorante maracujá natural 55ml</div>
+                        <div class="price">R$ 19,90</div>
+                        <div class="description">Desodorante natural com essência de maracujá. Frescor duradouro e proteção eficaz, cuidando suavemente da sua pele.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/sabonete (2).png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Sabonete em Barra Laranja Refrescante 2x80g</div>
+                        <div class="price">R$ 34,90</div>
+                        <div class="description">Desperte seus sentidos com nosso sabonete de laranja. Frescor cítrico e energia vibrante para uma pele revitalizada.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/sabonete liquido 2.png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Sabonete Líquido Cascata Mineral 200ml</div>
+                        <div class="price">R$ 46,90</div>
+                        <div class="description">Sabonete líquido que oferece a pureza e o frescor dos minerais, para uma pele revigorada e revitalizada.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/embalagem sabonete.png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Sabonete em Barra Pedra Revitalizante 2x80g</div>
+                        <div class="price">R$ 49,90</div>
+                        <div class="description">Envolva-se na pureza da natureza com nosso sabonete Pedra Revitalizante. Uma fusão de frescor e minerais para uma pele renovada e energizada.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/embalagem creme facial.png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Creme Facial Firmador Toque de Seda Facial 40g</div>
+                        <div class="price">R$ 89,90</div>
+                        <div class="description">Desfrute da suavidade e luxo com nosso creme facial. Sua pele merece o melhor cuidado.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/sabonete.png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Sabonete em Barra Lago Azul 2x80g</div>
+                        <div class="price">R$ 59,90</div>
+                        <div class="description">Desperte seus sentidos com a frescura e tranquilidade do Lago Azul. Um mergulho revigorante para sua pele.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
                 </div>
             </section>
 
             <section class="products">
                 <h2>Shampoo</h2>
                 <div class="grid">
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Shampoo" />
-                        <p>Shampoo Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Shampoo" />
-                        <p>Shampoo Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Shampoo" />
-                        <p>Shampoo Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Shampoo" />
-                        <p>Shampoo Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Shampoo" />
-                        <p>Shampoo Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="produto.html" class="product-item">
-                        <img src="images/BioGreen (2)-Photoroom 2.svg" alt="Shampoo" />
-                        <p>Shampoo Natural</p>
-                        <div>
-                            <p>R$ 15,00</p>
-                            <div class="icons">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </a>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/shampoo (1).png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Shampoo Verde Vitalidade 250ml</div>
+                        <div class="price">R$ 59,90</div>
+                        <div class="description">Revitalize seus cabelos com o shampoo Verde Vitalidade. Sua fórmula rica em extratos naturais proporciona brilho e força, deixando seus cabelos saudáveis e cheios de vida.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/shampoo (4).png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Shampoo saladinha feliz 100ml</div>
+                        <div class="price">R$ 39,90</div>
+                        <div class="description">Torne a hora do banho uma festa com o shampoo Saladinha Divertida. Cheirinho delicioso de frutas para cabelos macios e perfumados. Fórmula suave que cuida do cabelo do seu pequeno com carinho.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/shampoo (2).png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Shampoo Essência Verde 250ml</div>
+                        <div class="price">R$ 59,90</div>
+                        <div class="description">Descubra a pureza da natureza com o shampoo Essência Verde. Limpeza profunda e nutrição intensa, para cabelos macios, sedosos e revitalizados.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/shampoo (5).png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Shampoo Brisa Marinha 150ml</div>
+                        <div class="price">R$ 59,90</div>
+                        <div class="description">Transforme a rotina de banho em uma brisa revigorante com o Shampoo Brisa Marinha, para cabelos limpos e perfumados.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/shampoo (3).png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Shampoo Clorofila Fresca 150ml</div>
+                        <div class="price">R$ 59,90</div>
+                        <div class="description"> Sinta a frescura e a energia da clorofila com o shampoo Clorofila Fresca. Fórmula suave que fortalece e hidrata, promovendo um couro cabeludo saudável e fios revitalizados.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/shampoo.png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Sabonete em Barra Lago Azul 2x80g</div>
+                        <div class="price">R$ 59,90</div>
+                        <div class="description">Desperte seus sentidos com a frescura e tranquilidade do Lago Azul. Um mergulho revigorante para sua pele.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
                 </div>
             </section>
+
+            <section class="products">
+                <h2>Sabonetes</h2>
+                <div class="grid">
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/sabonete (2).png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Sabonete em Barra Laranja Refrescante 2x80g</div>
+                        <div class="price">R$ 34,90</div>
+                        <div class="description">Desperte seus sentidos com nosso sabonete de laranja. Frescor cítrico e energia vibrante para uma pele revitalizada.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/sabonete liquido 2.png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Sabonete Líquido Cascata Mineral 200ml</div>
+                        <div class="price">R$ 46,90</div>
+                        <div class="description">Sabonete líquido que oferece a pureza e o frescor dos minerais, para uma pele revigorada e revitalizada.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/sabonete.png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Sabonete em Barra Lago Azul Cristalino 2x80g</div>
+                        <div class="price">R$ 59,90</div>
+                        <div class="description">Desperte seus sentidos com a frescura e tranquilidade do Lago Azul. Um mergulho revigorante para sua pele.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/embalagem sabonete.png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Sabonete em Barra Pedra Revitalizante 2x80g</div>
+                        <div class="price">R$ 49,90</div>
+                        <div class="description">Envolva-se na pureza da natureza com nosso sabonete Pedra Revitalizante. Uma fusão de frescor e minerais para uma pele renovada e energizada.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/sabonete bio.png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Sabonete em Barra Essência Verde 80g</div>
+                        <div class="price">R$ 29,90</div>
+                        <div class="description">Envolva-se na pureza da natureza com nosso sabonete Pedra Revitalizante. Uma fusão de frescor e minerais para uma pele renovada e energizada.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                    <div class="product-item">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <img src="images/sabonete barra.png" alt="Produto">
+                        <div class="label">Lançamento</div>
+                        <div class="title">Sabonete em Barra Verde Puro 2x80g</div>
+                        <div class="price">R$ 49,90</div>
+                        <div class="description">Experimente a essência natural com nosso sabonete Verde Puro. Ingredientes cuidadosamente selecionados para uma pele limpa, suave e revitalizada.</div>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+                </div>
+            </section>
+
+
         </main>
 
         <footer>
-            <p>&copy; 2024 BioGreen. Todos os direitos reservados.</p>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>DÚVIDAS</h3>
+                    <ul>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Formas de Pagamento</a></li>
+                        <li><a href="#">Frete e Entrega</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Mapa do Site</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>INSTITUCIONAL</h3>
+                    <ul>
+                        <li><a href="#">Nossa História</a></li>
+                        <li><a href="#">Grupo BioGreen</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Portal do Revendedor</a></li>
+                        <li><a href="#">Seja um Revendedor</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Onde comprar BioGreen</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>SUSTENTABILIDADE</h3>
+                    <ul>
+                        <li><a href="#">Nossos Projetos</a></li>
+                        <li><a href="#">BioGreen Recicla</a></li>
+                        <li><a href="#">Plástico Verde</a></li>
+                        <li><a href="#">Refil</a></li>
+                        <li><a href="#">Produtos Veganos</a></li>
+                        <li><a href="#">Cruelty Free</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>RELACIONAMENTO COM O CLIENTE</h3>
+                    <ul>
+                        <li><a href="#">Atendimento</a></li>
+                        <li><a href="#">Compre pelo Whatsapp</a></li>
+                        <li><a href="#">Compre e Retire em loja</a></li>
+                    </ul>
+                    <h3>LINKS ÚTEIS</h3>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Proteja-se Contra Fraudes</a></li>
+                        <li><a href="#">Preferências de Cookies</a></li>
+                        <li><a href="#">Código de Defesa do Consumidor</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Alerta Sobre Segurança</a></li>
+                        <li><a href="#">Carga Tributária</a></li>
+                        <li><a href="#">Regulamento de Compras</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h3>CADASTRE-SE E RECEBA LANÇAMENTOS E OFERTAS COM MUITO AMOR E SUSTENTABILIDADE!</h3>
+                <form>
+                    <input type="email" placeholder="Digite seu e-mail aqui" />
+                    <input type="text" placeholder="Nome" />
+                    <button type="submit">CADASTRAR</button>
+                </form>
+                <p>Ao se cadastrar, você concorda em receber comunicações nos termos da nossa <a href="#">Política de Privacidade</a>.</p>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-exchange-alt"></i> Troca em loja</a>
+                    <a href="#"><i class="fas fa-gift"></i> Quer Presentear?</a>
+                </div>
+                <div class="footer-social">
+                    <p>Siga nossas Redes Sociais!</p>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-blogger"></i></a>
+                </div>
+            </div>
         </footer>
+    
 
         <script src="js/main.js"></script>
     </body>

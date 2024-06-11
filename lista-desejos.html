@@ -16,20 +16,25 @@
     </head>
     <body>
         <div class="container">
-            <header>
-                <a href="index.html" class="logo"><img src="images/BioGreen-Photoroom 1.png" alt="" /></a>
-                <div class="search-container">
-                    <input type="text" placeholder="Pesquise nossos Produtos" />
-                    <button><i class="fas fa-search"></i></button>
+            <header class="header-container">
+                <div class="header-content">
+                    <a href="index.html" class="logo"><img src="images/logo-sem-fundo.png" alt="Logo" /></a>
+                    <div class="search-container">
+                        <input id="search-input" type="text" placeholder="Pesquise nossos Produtos" />
+                        <button aria-label="Pesquisar"><i class="fas fa-search"></i></button>
+                    </div>
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="carrinho.html" class="nav-link"><i class="fas fa-shopping-cart" aria-hidden="true"></i> Carrinho</a></li>
+                            <li><a href="lista-desejos.html" class="nav-link"><i class="fas fa-heart" aria-hidden="true"></i> Lista de desejos</a></li>
+                            <li><a href="pedidos.html" class="nav-link"><i class="fas fa-box" aria-hidden="true"></i> Meus pedidos</a></li>
+                            <li><a href="conta.html" class="nav-link"><i class="fas fa-user" aria-hidden="true"></i> Minha Conta</a></li>
+                        </ul>
+                    </nav>
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
-                <nav>
-                    <ul>
-                        <a href="carrinho.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Carrinho</a>
-                        <a href="lista-desejos.html" class="nav-link"><i class="fas fa-heart"></i> Lista de desejos</a>
-                        <a href="pedidos.html" class="nav-link"><i class="fas fa-box"></i> Meus pedidos</a>
-                        <a href="conta.html" class="nav-link"><i class="fas fa-user"></i> Minha Conta</a>
-                    </ul>
-                </nav>
             </header>
         </div>
 
