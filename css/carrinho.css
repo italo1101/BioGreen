@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body > main {
     background: #fff;
     padding: 0 30px 30px;
@@ -73,7 +74,7 @@ table tbody tr td {
 }
 
 .product .info .category {
-    color: #666;
+    color: #646161;
 }
 
 .qty {
@@ -197,8 +198,24 @@ aside > button:hover {
     body > main .content {
         flex-direction: column;
     }
+
+    thead tr{
+        display: none;
+    }
+
+    .produtos-selecionados .produto{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
     
     aside {
         margin-left: 0;
+    }
+
+    table{
+        display: flex;
+        flex-direction: column;
     }
 }
