@@ -17,25 +17,25 @@
     <body>
         <div class="container">
             <header class="header-container">
-                <div class="header-content">
-                    <a href="index.html" class="logo"><img src="images/logo-sem-fundo.png" alt="Logo" /></a>
-                    <div class="search-container">
-                        <input id="search-input" type="text" placeholder="Pesquise nossos Produtos" />
-                        <button aria-label="Pesquisar"><i class="fas fa-search"></i></button>
-                    </div>
-                    <nav>
-                        <ul class="nav-links">
-                            <li><a href="carrinho.html" class="nav-link"><i class="fas fa-shopping-cart" aria-hidden="true"></i> Carrinho</a></li>
-                            <li><a href="lista-desejos.html" class="nav-link"><i class="fas fa-heart" aria-hidden="true"></i> Lista de desejos</a></li>
-                            <li><a href="pedidos.html" class="nav-link"><i class="fas fa-box" aria-hidden="true"></i> Meus pedidos</a></li>
-                            <li><a href="conta.html" class="nav-link"><i class="fas fa-user" aria-hidden="true"></i> Minha Conta</a></li>
-                        </ul>
-                    </nav>
-                    <div class="hamburger-menu" id="hamburger-menu">
-                        <i class="fas fa-bars"></i>
-                    </div>
+            <div class="header-content">
+                <a href="index.html" class="logo"><img src="images/logo-sem-fundo.png" alt="Logo" /></a>
+                <div class="search-container">
+                    <input id="search-input" type="text" placeholder="Pesquise nossos Produtos" />
+                    <button aria-label="Pesquisar"><i class="fas fa-search"></i></button>
                 </div>
-            </header>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="carrinho.html" class="nav-link"><i class="fas fa-shopping-cart" aria-hidden="true"></i> Carrinho</a></li>
+                        <li><a href="lista-desejos.html" class="nav-link"><i class="fas fa-heart" aria-hidden="true"></i> Lista de desejos</a></li>
+                        <li><a href="pedidos.html" class="nav-link"><i class="fas fa-box" aria-hidden="true"></i> Meus pedidos</a></li>
+                        <li><a href="conta.html" class="nav-link"><i class="fas fa-user" aria-hidden="true"></i> Minha Conta</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
         </div>
 
         <main class="principal">
@@ -45,19 +45,32 @@
                 <section class="produtos-selecionados">
                     <div class="produto">
                         <div class="produto-info">
-                            <img src="images/BioGreen (2)-Photoroom 2.svg" alt="" class="produto-img" />
+                            <img src="images/sabonetes namorados.png" alt="" class="produto-img" />
                             <div>
                                 <p>Sabonete Rosa Silvestre</p>
                                 <p>R$19,90</p>
                                 <button class="btn-adiciona">Adicionar ao carrinho</button>
                             </div>
                         </div>
-
                         <div class="produto-adiciona">
                             <i class="fa-solid fa-x"></i>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
+
+                    <div class="produto">
+                        <div class="produto-info">
+                            <img src="images/sabonetes namorados.png" alt="" class="produto-img" />
+                            <div>
+                                <p>Sabonete Rosa Silvestre</p>
+                                <p>R$19,90</p>
+                                <button class="btn-adiciona">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto-adiciona">
+                            <i class="fa-solid fa-x"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
                 </section>
 
                 <div class="mensagem-vazio" style="display: none">
@@ -70,5 +83,6 @@
             </div>
         </main>
         <script src="js/identificaPag.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

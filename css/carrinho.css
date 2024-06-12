@@ -6,7 +6,10 @@
 
 
 body > main {
-    background: #fff;
+    margin: 0 auto;
+    width: 80%;
+    background: transparent;
+    border: 2px solid #455f40;
     padding: 0 30px 30px;
 }
 
@@ -194,6 +197,10 @@ aside > button {
 
 aside > button:hover {
     background: #3bc55b;
+}
+
+footer{
+    text-align: center;
 }
 
 @media (max-width: 768px) {
