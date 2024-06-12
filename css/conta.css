@@ -30,7 +30,7 @@
 
 .main-login input:focus {
     background-color: #eef5ed;
-    box-shadow: 0px 0px 0px 2px #455f40;
+    box-shadow: 0px 0px 0px 4px #455f40;
 }
 
 .main-login .login-link {
