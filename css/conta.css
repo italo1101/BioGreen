@@ -4,9 +4,10 @@
 }
 
 .main-login {
+    background-color: #e8edec;
     padding: 50px;
-    border: 1px solid #455f40;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-login h2 {
@@ -16,12 +17,12 @@
 
 .main-login input {
     display: block;
-    background-color: transparent;
+    background-color: white;
     height: 20px;
     width: 250px;
     margin: 5px 0 10px;
     padding: 5px;
-    border: 1px solid #455f40;
+    border: 1px solid white;
     border-radius: 5px;
     outline: none;
     transition: 0.2s;

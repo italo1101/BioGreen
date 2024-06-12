@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BioGreen</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/criacao-conta.css" />
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="header-content">
+                <a href="index.html" class="logo"><img src="images/logo-sem-fundo.png" alt="Logo" /></a>
+                <div class="search-container">
+                    <input id="search-input" type="text" placeholder="Pesquise nossos Produtos" />
+                    <button aria-label="Pesquisar"><i class="fas fa-search"></i></button>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="carrinho.html" class="nav-link"><i class="fas fa-shopping-cart" aria-hidden="true"></i> Carrinho</a>
+                        </li>
+                        <li>
+                            <a href="lista-desejos.html" class="nav-link"><i class="fas fa-heart" aria-hidden="true"></i> Lista de desejos</a>
+                        </li>
+                        <li>
+                            <a href="pedidos.html" class="nav-link"><i class="fas fa-box" aria-hidden="true"></i> Meus pedidos</a>
+                        </li>
+                        <li>
+                            <a href="conta.html" class="nav-link"><i class="fas fa-user" aria-hidden="true"></i> Minha Conta</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>Criar Conta</h2>
+            <form>
+                <label for="nome">Nome</label>
+                <input class="conta-input" type="text" id="nome" name="nome" required />
+
+                <label for="email">E-mail</label>
+                <input class="conta-input" type="email" id="email" name="email" required />
+
+                <label for="telefone">Número de telefone</label>
+                <input class="conta-input" type="tel" id="telefone" name="telefone" required />
+
+                <label for="senha">Senha</label>
+                <input class="conta-input" type="password" id="senha" name="senha" required />
+
+                <button class="btn-submit" type="submit">Criar conta</button>
+            </form>
+            <p><a href="login.html">Já tem uma conta? Fazer login</a></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+.container {
+    background-color: #e8edec;
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3a5c40;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.conta-input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.conta-input:focus {
+    background-color: #eef5ed;
+    box-shadow: 0px 0px 0px 2px #455f40;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #3a5c40;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #345437;
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+a {
+    color: #6b5b95;
+    text-decoration: none;
+}
