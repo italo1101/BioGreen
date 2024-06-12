@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// hamburger menu
 
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgerMenu = document.getElementById('hamburger-menu');

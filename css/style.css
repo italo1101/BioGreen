@@ -156,3 +156,7 @@ body {
         display: none;
     }
 }
+
+.nav-link.active {
+    border-bottom: 2px solid #fff; /* Ou qualquer outro estilo que você preferir */
+}
