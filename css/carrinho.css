@@ -11,6 +11,7 @@ body > main {
     background: transparent;
     border: 2px solid #455f40;
     padding: 0 30px 30px;
+    margin-top: 200px;
 }
 
 body > main .page-title {
@@ -39,6 +40,7 @@ button {
     cursor: pointer;
     font-family: 'Lato', sans-serif;
 }
+
 
 table {
     width: 100%;
