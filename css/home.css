@@ -7,11 +7,13 @@
     color: white;
     padding: 50px 50px;
     margin: 0 auto;
+    margin-top: 100px;
     border-radius: 10px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     position: relative;
     overflow: hidden;
 }
+
 
 .carousel {
     display: flex;
@@ -325,9 +327,13 @@ footer {
 
 /* Estilos específicos para dispositivos móveis */
 @media (max-width: 600px) {
+
+  
+
     .hero {
         flex-direction: column;
         padding: 20px 10px;
+        width: 90%;
     }
 
     .hero-text {

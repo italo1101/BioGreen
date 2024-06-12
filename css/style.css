@@ -8,11 +8,33 @@ body {
     background-color: #ecf0f1;
 }
 
+#cart-quantity {
+    position: absolute;
+    top: 4px;
+    right: 56rem;
+    background-color: #28a745;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+.cart-message {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .header-container {
     background-color: #455f40;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 .header-content {
@@ -89,6 +111,17 @@ body {
 
 /* Responsividade dispositivos moveis */
 @media (max-width: 768px) {
+
+    .header-container {
+        background-color: #455f40;
+        padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 92%;
+        top: 0;
+        z-index: 1;
+    }
+
     .header-content {
         flex-direction: row;
         justify-content: space-between;
