@@ -1,3 +1,7 @@
+body{
+    text-decoration: none;
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -133,6 +137,8 @@
 .product-item .title {
     font-weight: bold;
     margin: 10px 0;
+    text-decoration: none;
+    color: #455f40;
 }
 
 .product-item .price {

@@ -11,6 +11,7 @@
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     position: relative;
     overflow: hidden;
+    margin-top: 100px;
 }
 
 .carousel {
@@ -327,6 +328,7 @@ footer {
     .hero {
         flex-direction: column;
         padding: 20px 10px;
+        width: 90%;
     }
 
     .hero-text {
