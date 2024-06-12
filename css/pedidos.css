@@ -24,6 +24,9 @@ main {
     justify-content: space-around;
 }
 
+.produto-info img {
+    width: 40%;
+}
 .produto-adiciona {
     display: flex;
     flex-direction: column;

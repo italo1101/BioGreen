@@ -3,7 +3,6 @@ main {
     margin: 0 auto;
 }
 
-
 .principal > h1,
 .principal > p {
     color: #455f40;
@@ -33,6 +32,10 @@ main {
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
+}
+
+.produto-info img {
+    width: 30%;
 }
 
 .produto-adiciona .fa-heart:hover {
